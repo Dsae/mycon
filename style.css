@@ -1,13 +1,16 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
 body{
     margin: 0;
 }
-
 
 .top-header{
     position: fixed;
     alignment: top;
     display: flex;
-    height: 5%;
+    height: 35px;
     width: 100%;
     background-color: black;
     justify-content: flex-end;
@@ -34,8 +37,9 @@ body{
 
 .header-button:hover{
     background-color: rgb(22,148,255);
+    transition-duration: 0.3s;
 }
-.content{
+.content {
     display: flex;
     flex-direction: column;
     position: static;
@@ -43,18 +47,20 @@ body{
     justify-content: flex-start;
     align-items: center;
     width: 70%;
-    height: 1000px;
     background-color: white;
     margin: 0 auto;
+    min-height: 1000px;
 }
 
-.head-picture {
+.logo {
     display: flex;
     width: 100%;
     height: 200px;
     background-color: gray;
     justify-content: center;
     align-items: center;
+    background-image: url("./media/cut1_mehr_farbe.png");
+    background-position: center;
 }
 
 #myconLogo{
@@ -66,9 +72,9 @@ body{
 .convention-picture{
     display: flex;
     width: 95%;
-    height: 200px;
+    height: 300px;
     background-color: lightgray;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 .footer{
@@ -80,7 +86,7 @@ body{
     align-items: center;
 }
 
-.iimprint{
+.imprint{
     color: white;
     display: flex;
     align-items: center;
@@ -92,28 +98,35 @@ body{
     padding-right: 20px;
 }
 
+.footer:hover{
+    background-color: rgb(22,148,255);
+    transition-duration: 0.7s;
+}
+
 .nav{
     display: flex;
+    flex-wrap: wrap;
     width: 95%;
-    height: 35px;
+    height: auto;
     background-color: white;
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 .nav-button{
-    border-left: 1px solid rgb(22,148,255);
-    border-right: 1px solid rgb(22,148,255);
+    border-top: 1px solid rgb(22,148,255);
+    border-bottom: 1px solid rgb(22,148,255);
     color: rgb(22,148,255);
+    text-align: center;
 
-    margin-left: 0px;
+    width: 200px;
+
     margin-top: 2px;
     margin-bottom: 2px;
-    margin-right: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
 
-    padding-left: 70px;
-    padding-right: 70px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -121,4 +134,59 @@ body{
 .nav-button:hover{
     color: white;
     background-color: rgb(22,148,255);
+    transition-duration: 0.7s;
+}
+
+.convention-text{
+    display: flex;
+    color: black;
+    width: 90%;
+    font-size: 20px;
+    flex-direction: column;
+    line-height: 150%;
+}
+
+.convention-text>h2{
+    margin-top: 40px;
+}
+
+.convention-button{
+     width: 200px;
+     height: 30px;
+     color: rgb(22,148,255);
+     font-size: 16px;
+     background-color: white;
+     border: 1px solid rgb(22,148,255);
+     text-align: center;
+ }
+
+.convention-button:hover{
+    background-color: rgb(22,148,255);
+    color: white;
+    transition-duration: 0.7s;
+}
+
+.offer{
+    display: flex;
+    font-size: 12px;
+    color: rgb(22,148,255);
+    margin-top: 2em;
+    flex-direction: column;
+}
+
+.offer-button{
+    width: 100px;
+    height: auto;
+    color: rgb(22,148,255);
+    font-size: 12px;
+    background-color: white;
+    border: 1px solid rgb(22,148,255);
+    text-align: center;
+    margin-top: 5px;
+}
+
+.offer-button:hover{
+    background-color: rgb(22,148,255);
+    color: white;
+    transition-duration: 0.7s;
 }
