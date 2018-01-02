@@ -193,3 +193,7 @@ body{
     color: white;
     transition-duration: 0.7s;
 }
+
+.convention-title{
+    width: 95%;
+}
