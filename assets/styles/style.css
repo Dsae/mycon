@@ -59,7 +59,7 @@ body{
     background-color: gray;
     justify-content: center;
     align-items: center;
-    background-image: url("./media/cut1_mehr_farbe.png");
+    background-image: url("../images/cut1_mehr_farbe.png");
     background-position: center;
 }
 
@@ -71,11 +71,10 @@ body{
 
 .convention-picture{
     display: flex;
-    width: 95%;
-    height: 300px;
+    max-width: 95%;
+    height: auto;
     background-color: lightgray;
     margin-top: 20px;
-    background-image: url("./media/convention-3.png");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -196,4 +195,38 @@ body{
 
 .convention-title{
     width: 95%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.login-drop{
+    background-color: black;
+    position: absolute;
+    margin-top: 35px;
+    width: 200px;
+    transition
+    height: 150px;
+    color: white;
+}
+
+.login-form{
+    text-align: center;
+}
+
+.login-button{
+    background-color: black;
+    width: 50%;
+    height: 30px;
+    margin: 5px;
+    border: 1px solid white;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.login-button:hover{
+    background-color: rgb(22,148,255);
+    transition-duration: 0.3s;
 }

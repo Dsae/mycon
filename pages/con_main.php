@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>con_main</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 </head>
 <body bgcolor="#f5f5f5">
@@ -16,7 +16,7 @@
 </div>
 
 <div class="logo">
-    <img id="myconLogo" src="./media/mycon.png">
+    <img id="myconLogo" src="./assets/images/mycon.png">
 </div>
 
 <div class = "content">
@@ -30,8 +30,7 @@
 
     <div class="convention-title"><h2 style="margin-bottom: 0;">Convention Title</h2></div>
 
-    <div class="convention-picture">
-    </div>
+    <img src="./assets/images/convention-3.png" class="convention-picture">
 
     <div class="nav">
         <div class="nav-button">Convention</div>
