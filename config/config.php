@@ -1,3 +1,3 @@
 <?php
 
-define('ROOT', dirname($_SERVER['SCRIPT_NAME']) . '/');
+define('ROOT', dirname($_SERVER['SCRIPT_NAME']));

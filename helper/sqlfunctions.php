@@ -1,5 +1,4 @@
 <?php
-require_once('./helper/dbconnect.php');
 
 function sqlGet(PDO $db, $column, $from, $where){
     $result = $db->query("SELECT " . $column . " FROM " . $from . " WHERE " . $where)->fetch();
