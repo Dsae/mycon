@@ -206,8 +206,8 @@ a{
     position: absolute;
     margin-top: 35px;
     width: 200px;
-    transition
-    height: 150px;
+    transition: height 0.3s linear 0s;
+    overflow: hidden;
     color: white;
 }
 

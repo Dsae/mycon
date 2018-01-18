@@ -1,7 +1,7 @@
 <div class="top-header" id="top-header">
     <div class="header-buttons">
         <div class="header-button" onclick="login()">LogIn</div>
-        <div class="login-drop" id="login-drop" style="display: none">
+        <div class="login-drop" id="login-drop" style="height: 0px;">
             <form class="login-form">
                 <label for="loginUsername">Benutzername:</label>
                 <input class="login-input" type="text" id="loginUsername">
