@@ -1,0 +1,294 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+/*--------------------------------------------------------------------------
+|                                  HEADER                                  |
+--------------------------------------------------------------------------*/
+/*black bar which holds the menu-button and the top-header-container*/
+#top-header2{
+    position: fixed;
+    display: flex;
+    height: 35px;
+    width: 100%;
+    background-color: black;
+}
+/*ONLY VISIBLE ON LOW RESOLUTION - button for toggling the drop-down
+navigation-menu*/
+#menu-button{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: flex;
+    width: 0px;
+    background-color: black;
+    transition: background-color 0.3s linear 0s;
+    overflow: hidden;
+}
+/*container in the top-header which either displays the login and register
+buttons or when logged in the username and the logout button*/
+#top-header-container{
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+    padding-right: 44px;
+}
+/*properties for the buttons used in the header*/
+.header-button{
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: black;
+    transition: background-color 0.3s linear 0s;
+}
+/*ONLY VISIBLE ON LOW RESOLUTION - contains the navigation*/
+#navigation-panel{
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    background-color: black;
+    top: 35px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 1;
+    transition: height 0.3s linear 0s;
+}
+/*contains a formular for the login procedure*/
+#login-panel{
+    position: absolute;
+    height: 0px;
+    background-color: black;
+    top: 35px;
+    width: 240px;
+    right: 21px;
+    overflow: hidden;
+    z-index: 1;
+    transition: height 0.3s linear 0s;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+/*contains a formular for the registration procedure*/
+#register-panel{
+    position: absolute;
+    height: 0px;
+    background-color: black;
+    top: 35px;
+    width: 240px;
+    right: 21px;
+    overflow: hidden;
+    z-index: 1;
+    transition: height 0.3s linear 0s;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+/*properties used for the buttons in the login- and regsiter-panel*/
+.panel-button{
+    background-color: black;
+    width: 50%;
+    height: 30px;
+    margin: 5px;
+    border: 1px solid white;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: background-color 0.3s linear 0s;
+}
+/*this div-container holds the mycon-logo and has a background-picture serving
+as banner*/
+#header-banner{
+    background-image: url("../images/header_banner.png");
+    background-position: center;
+    height: 200Px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*properties for the mycon-logo*/
+#mycon-logo {
+    height: 125px;
+    margin-top: 10%;
+}
+/*--------------------------------------------------------
+|                          HOME                          |
+--------------------------------------------------------*/
+.content {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    alignment: center;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+    background-color: white;
+    margin: 0 auto;
+    min-height: 1000px;
+}
+
+.logo {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/header_banner.png");
+    background-position: center;
+}
+
+#myconLogo{
+    height: 125px;
+    margin-top: 10%;
+}
+
+.convention-picture{
+    display: flex;
+    max-width: 95%;
+    height: auto;
+    background-color: lightgray;
+    margin-top: 20px;
+    animation: fadeEffect 2s;
+    -webkit-animation: fadeEffect 2s;
+}
+
+@keyframes fadeEffect{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@-webkit-keyframes fadeEffect{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.footer{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.imprint{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer:hover{
+    background-color: rgb(22,148,255);
+    transition-duration: 0.7s;
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: auto;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nav-button{
+    border-top: 1px solid rgb(22,148,255);
+    border-bottom: 1px solid rgb(22,148,255);
+    color: rgb(22,148,255);
+    text-align: center;
+
+    width: 200px;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-button:hover{
+    color: white;
+    background-color: rgb(22,148,255);
+    transition-duration: 0.7s;
+}
+
+.convention-text{
+    display: flex;
+    color: black;
+    width: 90%;
+    font-size: 20px;
+    flex-direction: column;
+    line-height: 150%;
+}
+
+.convention-text>h2{
+    margin-top: 40px;
+}
+
+.convention-button{
+     width: 200px;
+     height: 30px;
+     color: rgb(22,148,255);
+     font-size: 16px;
+     background-color: white;
+     border: 1px solid rgb(22,148,255);
+     text-align: center;
+ }
+
+.convention-button:hover{
+    background-color: rgb(22,148,255);
+    color: white;
+    transition-duration: 0.7s;
+}
+
+.offer{
+    display: flex;
+    font-size: 12px;
+    color: rgb(22,148,255);
+    margin-top: 2em;
+    flex-direction: column;
+}
+
+.offer-button{
+    width: 100px;
+    height: auto;
+    color: rgb(22,148,255);
+    font-size: 12px;
+    background-color: white;
+    border: 1px solid rgb(22,148,255);
+    text-align: center;
+    margin-top: 5px;
+}
+
+.offer-button:hover{
+    background-color: rgb(22,148,255);
+    color: white;
+    transition-duration: 0.7s;
+}
+
+.convention-title{
+    width: 95%;
+}
+
+a{
+    text-decoration: none;
+}
+
